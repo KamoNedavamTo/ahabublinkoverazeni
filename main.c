@@ -8,12 +8,9 @@ int main() {
         for (int j = 0; j < i - 1; ++j) {
             if(nums[j] > nums[j + 1]){
 
-                int tmp = nums[j];
-                nums[j] = tmp;
-
-
-
-
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
 
             }
         }
